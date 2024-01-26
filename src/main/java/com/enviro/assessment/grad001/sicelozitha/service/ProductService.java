@@ -6,6 +6,6 @@ import java.util.List;
 
 public interface ProductService {
     Product createProduct(Product product);
-    List<Product>getInvestorProduct(long investorId);
+    public List<Product> getInvestorProduct();
     String withdrawAmount(long productId, double drawAmount);
 }

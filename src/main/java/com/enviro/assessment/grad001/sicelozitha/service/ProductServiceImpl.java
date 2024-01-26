@@ -19,8 +19,8 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<Product> getInvestorProduct(long investorId) {
-        return null;
+    public List<Product> getInvestorProduct() {
+        return productRepository.findAll();
     }
 
     @Override
